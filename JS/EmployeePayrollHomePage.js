@@ -1,10 +1,9 @@
+let empPayrollList;
 window.addEventListener('DOMContentLoaded', (event) => {
-    employeePayrollList = getEmployeePayrollDataFromStorage();
-    console.log(employeePayrollList)
-    document.querySelector(".emp-count").textContent = employeePayrollList.length;
+    empPayrollList = getEmployeePayrollDataFromStorage();
     createInnerHtml();
     localStorage.removeItem('editEmp');
-  });
+});
 
 const getEmployeePayrollDataFromStorage = () => {
     return localStorage.getItem('employeePayrollList') ? JSON.parse(localStorage.getItem('employeePayrollList')) : [];
