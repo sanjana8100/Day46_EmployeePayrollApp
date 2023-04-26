@@ -65,7 +65,7 @@ const getSelectedValues = (propertyValue) => {
 
 
 function createAndUpdateStorage(employeePayrollData){
-    let employeePayrollList = JSON.parse(localStorage.getItem("employeePeyrollList"));
+    let employeePayrollList = JSON.parse(localStorage.getItem("employeePayrollList"));
 
     if(employeePayrollList != undefined){
         employeePayrollList.push(employeePayrollData);
@@ -75,7 +75,7 @@ function createAndUpdateStorage(employeePayrollData){
     }
 
     alert(employeePayrollList.toString());
-    localStorage.setItem("employeePeyrollList",JSON.stringify(employeePayrollList));
+    localStorage.setItem("employeePayrollList",JSON.stringify(employeePayrollList));
 }
 
 const resetForm = () => {
