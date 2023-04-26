@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link
+href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;
+0,200;0,300;0,400;0,600;1,500&display=swap"
+rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600
+&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/EmployeePayrollHomePage.css">
+</head>
+<body>
+    <header class="header-content header"> 
+        <div class="logo-content">
+            <img src="./Images/logo.jpg" width="5%" height="5%" alt="Emp Logo">
+            <div>
+                <span class="emp-text">Employee</span><br>
+                <span class="emp-text emp-payroll">Payroll</span>
+             </div>
+        </div>
+    </header>
+<div class="main-content">
+ <div class="header-content"> 
+    <div class="emp-detail-text"> 
+        Employee Details 
+    </div> 
+    <a href="./EmployeePayrollForm.html" class="add-button">
+    <img src="./Images/addUser.png"  alt="" width="20%" height="20%"> Add User </a> 
+</div>
+<table id="display" class="table">
+    <tr>
+       <th></th> 
+       <th>Name</th> 
+       <th>Gender</th> 
+       <th>Department</th> 
+       <th>Salary</th> 
+       <th>Start Date</th> 
+       <th>Actions</th>
+   </tr>
+   <tr> 
+       <td><img class="profile" alt="" src="./Images/displayImage1.png" width="20%" height="20%"> 
+       </td> 
+       <td>Narayan Mahadevan</td> 
+       <td>Male</td> 
+       <td><div class='dept-label'>HR</div>
+           <div class='dept-label'>Finance</div>
+       </td>
+       <td>3000000</td>
+       <td>1 Nov 2020</td>
+       <td> 
+           <img id="1" onclick="remove(this)" alt="delete" src="./Images/deleteIcon.jpg"width="3%" height="3%">
+           <img id="1" alt="edit" onclick="update(this)" src="./Images/editIcon.png"width="3%" height="3%"> 
+       </td> 
+   </tr>  
+</table>
+</div>
+</body>
+</html>
